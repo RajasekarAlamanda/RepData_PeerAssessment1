@@ -80,8 +80,8 @@ ImputedMinuteDayCat <- ddply(Activity_Imputed,.(interval,DayCat),summarize,Mean_
 
 
 xyplot(Mean_Steps~interval|DayCat,data=ImputedMinuteDayCat,type="l",layout = c(1,2),
-       main="Average steps (imputed) per interval and type of day",
-       ylab="Average number of steps",xlab="Interval [5-min increments]")
+       main="Average steps - By 5 Minute Interval & Weekday",
+       ylab="Average number of steps",xlab="5 Minute Interval")
 ```
 
 
