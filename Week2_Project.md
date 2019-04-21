@@ -11,6 +11,7 @@ setwd("~/Rajasekar Alamanda/KC/R/Coursera - Data Science/Reproducible Research")
 library(dplyr)
 library(plyr)
 library(lattice)
+library(knitr)
 ```
         
 ### Read file & format date field
@@ -40,8 +41,14 @@ str(Activity)
 ##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...
 ```
 
+
+```r
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 ### Total steps taken per day
 #### Histogram of "Total steps per day"
+
 
 ```r
 DailySteps <- aggregate(steps~date,Activity,sum)

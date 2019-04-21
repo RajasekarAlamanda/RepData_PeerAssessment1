@@ -210,6 +210,7 @@ hr {
 library(dplyr)
 library(plyr)
 library(lattice)
+library(knitr)
 </code></pre>
 
 <h3>Read file &amp; format date field</h3>
@@ -233,6 +234,9 @@ str(Activity)
 ##  $ steps   : int  NA NA NA NA NA NA NA NA NA NA ...
 ##  $ date    : Date, format: &quot;2012-10-01&quot; &quot;2012-10-01&quot; ...
 ##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...
+</code></pre>
+
+<pre><code class="r">knitr::opts_chunk$set(echo = TRUE)
 </code></pre>
 
 <h3>Total steps taken per day</h3>
